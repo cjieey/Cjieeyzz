@@ -15,13 +15,15 @@ addProjectBtn.addEventListener('click', () => {
     projectCollections.forEach(project => {
         project.style.pointerEvents = 'none';
     });
-    cancel.addEventListener('click', () => {
-        popupForm.style.display = 'none';
-        const projectCollections = document.querySelectorAll('.project_collection');
-        
-        projectCollections.forEach(project => {
-            project.style.pointerEvents = 'auto';
-        });
+});
+
+
+cancel.addEventListener('click', () => {
+    popupForm.style.display = 'none';
+    const projectCollections = document.querySelectorAll('.project_collection');
+    
+    projectCollections.forEach(project => {
+        project.style.pointerEvents = 'auto';
     });
 });
 
@@ -51,7 +53,12 @@ uploadForm.addEventListener('submit', (event) => {
             </div>
         </div>`;
 
+    
     collect.innerHTML += projectHTML;
     popupForm.style.display = 'none';
     uploadForm.reset();
+    const projectCollections = document.querySelectorAll('.project_collection');
+    projectCollections.forEach(project => {
+        project.style.pointerEvents = 'auto';
+    });
 });
