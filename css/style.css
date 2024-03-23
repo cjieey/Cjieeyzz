@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    background-color: rgba(30, 30, 36, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+    
+  }
+  
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+  }
+.namecolor{
+    color: rgb(0, 208, 0);
+}
+.logo_icon{
+    margin-bottom: -3%;
+    width: 9%;
+    height: auto;
+}
+.Logo {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    display: inline-block;
+    margin: 0 1.5rem;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+
+.navmenu a:hover {
+    transform: translateY(-8px);
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 15%;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 10rem;
+    gap: 1rem;
+}
+
+.home-img img {
+    width: 50%;
+    height: auto;
+    margin-left: 10rem;
+    border-radius: 50%;
+}
+
+.home-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.abouth2{
+    text-align: center;
+}
+.about-section{
+    width: 90%;
+    margin-left: 5%;
+}
+.aboutp{
+    text-align: center;
+    text-align: justify;
+}
+.lista{
+    margin-left: 5%;
+}
+.icons{
+    margin-left: 2%;
+}
+.icons img{
+    width: 5%;
+    height: auto;
+    margin: 3%;
+    transition: transform .5s;
+}
+.icons img:hover{
+    transform: scale(2)
+}
+.proglanguage{
+    text-align: center;
+}
+
+.home-text h3 {
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-text h3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+
+.home-text p {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #f7f7f2;
+    border: 1px solid #1e1e24;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background: #f7f7f2;
+    color: #1e1e24;
+    transform: translateY(5px);
+}
+
+.socials-icons {
+    position: absolute;
+    top: 40%;
+    padding: 0 8rem;
+}
+
+.socials-icons i {
+    display: block;
+    margin: 25px 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+}
+
+.socials-icons i:hover {
+    transform: rotate3d(0, 0, 1, 90deg);
+}
+
+.scroll-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 9%;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .5s;
+    animation: shake 0.5s;
+}
+
+
+.scroll-btn:hover{
+    transform: scale(1.5);
+}
+
+
+.about-section {
+    display: block;
+    padding: 100px;
+    background-color: #000000;
+    transition: opacity 0.5s ease-in-out;
+}
+.about-section p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+.about-section h3{
+    font-size: 1.5rem;
+}
+.about-section ul,ol{
+    margin-left: 4rem;
+}
+.about-section .abouth3 {
+    margin-left: 2rem;
+}
+footer {
+    background-color: rgba(30, 30, 36, 0.8);
+    color: #fff; 
+    text-align: center; 
+    padding: 5px 0; 
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Contact css */
+.contact {
+    padding: 50px 0;
+    text-align: center; 
+}
+
+.contact-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    margin-top: 5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    height: 558px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 1px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e24; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+    background-color: #333; 
+}
+
+/* project css */
+.project{
+    overflow: auto;
+    text-align: center;
+    margin-top: 7%;
+}
+.project h1{
+    font-size: 200%;
+}
+.collect{
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+
+}
+div.project_collection{
+    margin: 2%;
+    margin-bottom: 5%;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 360px;
+    height: 500px;
+    padding: 1%;
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
+.project_collection:hover{
+    background-color: #333;
+    color: white;
+    transform: scale(1.1);
+}
+img.pimg{
+    margin-top: 7%;
+    width: 320px;
+    height: 45%;
+    margin-bottom: 7%;
+    border: 1px solid black;
+}
+div.desc {
+    padding: 0;
+    text-align: justify;
+    font-size: 1em;
+}
+.addProjectBtn{
+    width: 10%;
+    padding: .5% .5%;
+    border-radius: 10px;
+    margin-left: 84%;
+    background-color: black;
+    border-style: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+    border: 1px solid #fff;
+}
+.addProjectBtn:hover{
+    background-color: white;
+    color: black;
+}
+.addimg{
+    width: 15%;
+    height: auto;
+    margin-right: 10%;
+}
+.rgb{
+    width: 20%;
+    height: auto;
+}
+.lbl{
+    border-radius: 10px;
+    background-color: #747070;
+    border-style: none;
+    width: 25%;
+    padding: .5%;
+    position: relative;
+    text-align: center;
+    font-size: .8em;
+    margin: 1%;
+}
+.label{
+    margin-top: 5%;
+    display: flex;
+}
+
+/* POP UP FROM */
+.popupForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.popupForm input,
+.popupForm textarea,
+.popupForm button {
+    padding: 1%;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 17%;
+}
+
+.upload{
+    border: 1px solid black;
+    background-color: rgb(0, 208, 0);
+    border-radius: 10px;
+    width: 30%;
+    font-weight:bolder;
+}
+
+.closeimg{
+    width: 5%;
+    height: auto;
+}
+
+button.ld{
+    position: fixed;
+    position: absolute;
+    margin-top: 35%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+}
+
+button.ld:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/* timeline */
+
+.timeline{
+    margin-top: 5%;
+    padding: 5%;
+}
+.tl{
+    background-color:  white;
+    color: black;
+    width: 350px;
+    padding: 1%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    margin: 6%;
+    transition: 0.5s ease;
+
+}
+.tl:hover{
+    background-color: greenyellow;
+    transform: scale(1.1);
+}
+
+.line{
+    margin-top: 2%;
+    border: 2px solid white;
+    width: 70%;
+    margin-left: 13%;
+    
+}
+.ptl{
+    display: flex;
+}
+.vl {
+    border-left: 6px solid white;
+    height: 6.3rem;
+    margin-left: 11.7%;
+    position: absolute;
+}
+.vl2 {
+    border-left: 6px solid white;
+    height: 6.3rem;
+    margin-left: 44%;
+    position: absolute;
+}
+.vl3 {
+    border-left: 6px solid white;
+    height: 6.3rem;
+    margin-left: 74.4%;
+    position: absolute;
+}
+.experience{
+    margin-top: -10%;
+    margin-left: 5.5%;
+    padding: 5%;
+}
+.exp{
+    background-color: white;
+    color: black;
+    width: 92%;
+    padding: 1%;
+    margin: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+      padding: 1rem 3rem; /* Adjust padding for smaller screens */
+    }
+  
+    .home {
+      padding: 2rem 3rem 0 3rem; /* Adjust padding for smaller screens */
+      grid-template-columns: 1fr; /* Change to single column layout */
+    }
+  
+    .home-img img {
+      margin-left: 0; /* Center align the image */
+      justify-self: center;
+    }
+  
+    .socials-icons {
+      padding: 0 3rem; /* Adjust padding for smaller screens */
+    }
+  
+    .scroll-btn {
+      left: 5%; /* Adjust position for smaller screens */
+    }
+  
+    .about-section,
+    .contact-form,
+    .project {
+      padding: 50px 0; /* Adjust padding for smaller screens */
+    }
+  
+    .project_collection {
+      width: 80%; /* Adjust width for smaller screens */
+    }
+  
+    .addProjectBtn {
+      margin-left: 70%; /* Adjust position for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home {
+      padding: 2rem 2rem 0 2rem; /* Adjust padding for even smaller screens */
+    }
+  
+    .navmenu {
+      display: none; /* Hide navigation menu for smaller screens */
+    }
+  
+    .socials-icons {
+      display: none; /* Hide social icons for smaller screens */
+    }
+  
+    .scroll-btn {
+      display: none; /* Hide scroll button for smaller screens */
+    }
+  
+    .about-section,
+    .contact-form,
+    .project {
+      padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+  
+    .project_collection {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .addProjectBtn {
+      margin-left: 65%; /* Adjust position for smaller screens */
+    }
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="icon/code.png">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+  <header>
+        <a href="index.html" class="Logo"><span class="namecolor">C</span>jieey. <img class="logo_icon" src="icon/black-cat.png" alt="cat_icon"></a>
+        <ul class="navmenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="timeline.html">TIMELINE</a></li>
+            <li><a href="projects.html">PROJECT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+  </header>  
+  <section class="project">
+    <h1>PROJECTS</h1>
+  </section>
+  <button class="addProjectBtn" id="addProjectBtn"><img src="icon/plus.png" alt="addbutton" class="addimg">ADD</button>
+  <div id="popupForm" class="popupForm">
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept="image/*" required>
+        <input type="text" id="linkInput" placeholder="Link" required>
+        <input type="text" id="titleInput" placeholder="Title" required>
+        <textarea id="descriptionInput" placeholder="Description" required></textarea>
+        <button type="submit" class="upload">Upload</button>
+        <button type="submit" class="upload" id="cancel">Cancel</button>
+    </form>
+</div>
+
+    <div class="collect" id="collect">
+            <div class="project_collection">
+                <img class="rgb" src="icon/iconrgb.png" alt="">
+                <a target="_blank" href="https://cjieey.github.io/Dog/">
+                <img src="project_img/act1.png" alt="Cinque Terre" class="pimg">
+                </a>
+                <h3>Activity 1</h3>
+                <div class="desc">The Dog</div>
+                <div class="label" id="label">
+                    <div class="lbl">HTML</div>
+                    <div class="lbl">CSS</div>
+                    <div class="lbl">JS</div>
+                </div>
+            </div>
+            <div class="project_collection">
+                <img class="rgb" src="icon/iconrgb.png" alt="">
+                <a target="_blank" href="https://cjieey.github.io/collection/index.html">
+                <img src="project_img/act2.png" alt="Cinque Terre" class="pimg">
+                </a>
+                <h3>Activity 2</h3>
+                <div class="desc">Portfolio</div>
+                <div class="label" id="label">
+                    <div class="lbl">HTML</div>
+                    <div class="lbl">CSS</div>
+                    <div class="lbl">JS</div>
+                </div>
+            </div>
+            <div class="project_collection">
+                <a target="_blank" href="https://cjieey.github.io/HTML-JS/">
+                <img class="rgb" src="icon/iconrgb.png" alt="">
+                <img src="project_img/act3.png" alt="Cinque Terre" class="pimg">
+                </a>
+                <h3>Activity 3</h3>
+                <div class="desc">Copy portfolio</div>
+                <div class="label" id="label">
+                    <div class="lbl">HTML</div>
+                    <div class="lbl">CSS</div>
+                    <div class="lbl">JS</div>
+                </div>
+            </div>
+            
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-bold ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph-bold ph-github-logo"></i></a>
+        </div>
+        <p>&copy; 2024 Cjieey. All rights reserved.</p>
+    </footer>
+    <script src="js/addbtn.js"></script>
+</body>
+</html>
