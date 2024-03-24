@@ -428,7 +428,6 @@ button.ld:hover{
 }
 
 /* timeline */
-
 .timeline{
     margin-top: 5%;
     padding: 5%;
@@ -491,3 +490,261 @@ button.ld:hover{
     margin: 1%;
 }
 
+
+/* SMALL SCREEN */
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .Logo {
+        margin-left: -30%;
+        margin-top: 1%;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+    }
+    .logo_icon{
+        margin-bottom: 0%;
+        width: 50%;
+        height: auto;
+    }
+    .navmenu {
+        margin-left: 15%;
+    }
+
+    .navmenu a {
+        display: inline-block;
+        margin: 0 1.5rem;
+        color: #ffffff;
+        font-weight: 500;
+        transition: all 0.6s;
+        margin-left: 5%;
+        font-size: .8em;
+    }
+
+    .home {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 2rem 5rem 0 3rem;
+        gap: 1rem;
+    }
+    
+    .home-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 2rem;
+        border-radius: 50%;
+    }
+    
+    .home-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .home-text h3 {
+        position: relative;
+        padding-left: 3rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .home-text h3::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #1e1e24;
+        left: 0;
+        top: 1rem;
+    }
+    .btn {
+        display: inline-block;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        color: #f7f7f2;
+        border: 1px solid #1e1e24;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        background: #1e1e24;
+        transition: all 0.5s;
+        margin: 1%;
+    }
+
+    .about-section {
+        display: block;
+        padding: 2%;
+        background-color: #000000;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .about-section h2{
+        margin-top: 30%;
+        font-size: 1.5rem;
+    }
+    .about-section p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: .1rem;
+        margin-right: .1rem;
+        font-size: 1em;
+    }
+
+    /* TIMELINE PAGE */
+    .tl{
+        background-color:  white;
+        color: black;
+        font-size: .8em;
+        width: 100%;
+        padding: 1%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        margin-top: 7%;
+        margin-left: 3%;
+        transition: 0.5s ease;
+    
+    }
+    .vl {
+        border-left: 6px solid white;
+        height: 2.9%;
+        margin-left: 11.7%;
+        position: absolute;
+    }
+    .vl2 {
+        border-left: 6px solid white;
+        height: 2.9%;
+        margin-left: 44%;
+        position: absolute;
+    }
+    .vl3 {
+        border-left: 6px solid white;
+        height: 2.9%;
+        margin-left: 73.6%;
+        position: absolute;
+    }
+    .tml{
+        margin-top: 8%;
+    }
+
+    /* PROJECTS PAGE */
+    div.project_collection{
+        margin: 2%;
+        margin-bottom: 30%;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 400px;
+        height: 350px;
+        padding: 1%;
+        background-color: white;
+        color: black;
+        transition: 0.5s ease;
+    }
+    img.pimg{
+        margin-top: 7%;
+        width: 200px;
+        height: 150px;
+        margin-bottom: 7%;
+        border: 1px solid black;
+    }
+    .project{
+        overflow: auto;
+        text-align: center;
+        margin-top: 20%;
+    }
+    .addProjectBtn{
+        margin-top: 12%;
+        width: 20%;
+        padding: .5% .5%;
+        border-radius: 10px;
+        margin-left: 75%;
+        background-color: black;
+        border-style: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: bolder;
+        border: 1px solid #fff;
+    }
+    .lbl{
+        border-radius: 10px;
+        background-color: #747070;
+        border-style: none;
+        width: 25%;
+        padding: .5%;
+        text-align: center;
+        font-size: .8em;
+        margin: 1%;
+    }
+    .label{
+        margin-top: 5%;
+        display: flex;
+    }
+    .collect{
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 3%;
+        margin-top: 5%;
+        height: 66vh;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .Logo {
+        margin-left: -5%;
+        margin-top: 1%;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+    }
+    .logo_icon{
+        margin-bottom: 0%;
+        width: 15%;
+        height: auto;
+        
+    }
+
+    .navmenu a {
+        display: inline-block;
+        margin: 0 1.5rem;
+        color: #ffffff;
+        font-weight: 500;
+        transition: all 0.6s;
+        margin-left: 50%;
+    }
+
+    .navmenu a {
+        display: inline-block;
+        margin: 0 1.5rem;
+        color: #ffffff;
+        font-weight: 500;
+        transition: all 0.6s;
+        margin-left: 70%;
+    }
+
+    .home {
+        margin-top: -10%;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 2rem 5rem 0 5rem;
+        gap: 1rem;
+    }
+    
+    .home-img img {
+        width: 60%;
+        height: auto;
+        margin-left: 5rem;
+        border-radius: 50%;
+    }
+    
+    .home-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+/* LARGE SCREENS */
