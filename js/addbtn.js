@@ -62,3 +62,13 @@ uploadForm.addEventListener('submit', (event) => {
         project.style.pointerEvents = 'auto';
     });
 });
+
+
+
+const projectCollection = document.querySelectorAll('.project_collection');
+
+projectCollection.forEach(item => {
+    item.addEventListener('dblclick', function() {
+        this.parentNode.removeChild(this);
+    });
+});
